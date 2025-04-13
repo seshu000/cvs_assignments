@@ -1,3 +1,10 @@
+#Question-8:
+'''Given a URL, download that and parse 
+and download all links inside that page 
+    Use ThreadPoolExecutor or ProcessPoolExecutor 
+    BeautifulSoup for parsing html, requests for downloading'''
+ 
+
 import os
 import requests
 from bs4 import BeautifulSoup
