@@ -28,7 +28,4 @@ class MaxFile:
                     result.append(os.path.basename(file))
         return result
 
-# Example usage
-fs = MaxFile(".")
-print(fs.get_largest_files(2))  # Prints the names of the two largest files
-print(fs.get_newer_files(datetime.date(2025, 4, 1)))  
+
