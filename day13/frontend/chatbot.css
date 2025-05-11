@@ -1,0 +1,130 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+.App {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh;
+}
+
+h1 {
+  background-color: #bf8117;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+button {
+  background-color: #bf8117;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #bf8117;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #fafafa;
+}
+.chat-display {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+.message {
+  margin: 8px 0;
+}
+.message.user {
+  text-align: right;
+}
+.message.bot {
+  text-align: left;
+}
+.message p {
+  background-color: #e1ffc7;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+.message.user p {
+  background-color: #d9e3f0;
+}
+
+.input-form {
+  display: flex;
+  margin-top: 10px;
+}
+.input-form button {
+  padding: 10px 16px;
+  background-color: #bf8117;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.input-form button:hover {
+  background-color:#bf8117;
+}
+.full-history {
+  padding: 15px;
+  background-color: #e9ecef;
+  max-height: 50vh;
+  overflow-y: auto;
+  border-top: 2px solid #ddd;
+}
+
+.full-history h2 {
+  text-align: center;
+  color: #333;
+}
+
+.full-history .message {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.full-history .message.user p {
+  background-color: #b8d0e9;
+}
+
+.full-history .message.bot p {
+  background-color: #e1ffc7;
+}
